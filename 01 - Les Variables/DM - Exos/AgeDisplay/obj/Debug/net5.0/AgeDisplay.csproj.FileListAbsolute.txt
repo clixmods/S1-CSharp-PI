@@ -1,0 +1,16 @@
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\AgeDisplay.exe
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\AgeDisplay.deps.json
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\AgeDisplay.runtimeconfig.json
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\AgeDisplay.runtimeconfig.dev.json
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\AgeDisplay.dll
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\ref\AgeDisplay.dll
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\bin\Debug\net5.0\AgeDisplay.pdb
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.csproj.AssemblyReference.cache
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.AssemblyInfoInputs.cache
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.AssemblyInfo.cs
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.csproj.CoreCompileInputs.cache
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.dll
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\ref\AgeDisplay.dll
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.pdb
+C:\Users\clixd\Documents\Student_S1-C-PI-2021\01 - Les Variables\DM - Exos\AgeDisplay\obj\Debug\net5.0\AgeDisplay.genruntimeconfig.cache
