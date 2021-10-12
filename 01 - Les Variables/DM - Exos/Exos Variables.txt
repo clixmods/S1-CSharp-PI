@@ -1,11 +1,11 @@
 Exo 1 : "Identifiant valide" - Dire si la declaration est valide.
 
-1) int mfrp; ( valide mais le nom pas explicite)
-2) int i; ( valide, mais pas le nom est pas explicite)
+1) int mfrp; valide 
+2) int i; valide
 3) double solde_compte; (_ pas conseillé, mais valide)
 4) double soldeCompte;  valide
 5) bool 1Resultat; Invalide (numéro dans le nom)
-6) int NombreDeChats; Valide 
+6) int NombreDeChats; Valide mais le mieux serait nombreDeChats
  
 Exo 2 : "Type resultat d'instruction" Donner le resultat et le type du resultat pour chacune des instructions suivantes:
  
