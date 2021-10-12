@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\clixd\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\clixd\\.nuget\\packages"
-    ]
-  }
-}
