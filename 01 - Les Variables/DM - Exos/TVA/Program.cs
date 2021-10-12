@@ -57,14 +57,14 @@ namespace CalculeTVA
                     float productPriceTTdC = product.Price * tvafloat;
                     if(WithQuantity)
                     {
-                        Console.WriteLine(product.Count+" quantity of "+product.Name+" cost "+product.Price*product.Count+" in total");  
-                        Console.WriteLine(product.Count+" quantity of "+product.Name+" cost together "+productPriceTTdC*product.Count+" with for each a TVA  = "+tva+"%"  ); 
+                        Console.WriteLine(product.Count+" "+product.Name+" coute "+product.Price*product.Count+" au total");  
+                        Console.WriteLine(product.Count+" "+product.Name+" coute "+productPriceTTdC*product.Count+" avec pour chaque une TVA de "+tva+"%"  ); 
                         Console.WriteLine("La taxe ajoute au total "+(productPriceTTdC-product.Price)*product.Count);
                     }    
                     else
                     {
-                        Console.WriteLine(product.Name+" cost "+product.Price);  
-                        Console.WriteLine(product.Name+" cost "+productPriceTTdC+" with a TVA = "+tva+"%");   
+                        Console.WriteLine(product.Name+" coute "+product.Price);  
+                        Console.WriteLine(product.Name+" coute "+productPriceTTdC+" avec une TVA de "+tva+"%");   
                         Console.WriteLine("La taxe ajoute "+(productPriceTTdC-product.Price));
 
                     }
