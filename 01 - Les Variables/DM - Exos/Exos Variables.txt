@@ -35,25 +35,3 @@ Exo 3 : "Initialisation valide", dire si la valeur assignée est valide.
 14) short s2 = 1.0f; Initialisation invalide
 15) long l3 = 1.0; Initialisation invalide
 
-Exo 4 : Creer un nouveau projet Visual Code "CalculeTVA" et Ecrire un programme en suivant les instructions suivantes :
-(Note : Attention pour chaque variable bien choisir les types=
-
-- Declarer une variable reprensentant la TVA.
-- Affecter à cette variable la valeur 20.0 
-- Declarer une variable reprensentant la TVA de premiere necessité.
-- Affecter à cette variable la valeur 5.0
-
-- Declarer une variable representant le prix d'un produit 1 Hors Taxe (HT), affecter lui un prix de 19.64.
-- Declarer une variable representant la quantité du produit 1 et affecter lui une valeur.
-- Declarer une variable representant le prix d'un produit 2 Hors Taxe, affecter lui un prix de 254.50.
-- Declarer une variable representant la quantité du produit 2 et affecter lui une valeur.
-
-- Calculer et affecter à une variable pour chaque produit le prix Toutes Taxes Comprises (TTC) avec la variable TVA à 20%.
-- Calculer et affecter à une variale le prix pour chaque produit en fonction de la quantité.
-- Même chose pour la TVA à 5%.
-- Affiicher le résultat.
-
-- Calculer et affecter à une variable le total HT de tous les produits en fonction de leur quantité, puis le total TTC. 
-- Afficher le résultat.
-- Calculer et affecter à une variable le total des TVAs.
-- Affiicher le résultat.
