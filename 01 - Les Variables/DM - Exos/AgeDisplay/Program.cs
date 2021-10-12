@@ -31,7 +31,7 @@ namespace AgeDisplay
             string age = Console.ReadLine();
             while(true)
             {
-                if(int.TryParse(age,out int cool))
+                if(int.TryParse(age,out int cool)) // On check si la valeur envoyer par l'user est bien un int
                 {
                     int BirthYear = DateTime.Now.Year - int.Parse(age);
                      Console.WriteLine("Vous êtes né l'année : "+BirthYear+" et vous avez "+age+" ans" ); 
