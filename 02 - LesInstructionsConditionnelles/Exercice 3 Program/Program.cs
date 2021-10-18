@@ -26,6 +26,7 @@ namespace Exercice_3_Program
         {
             while(true)
             {
+                Console.WriteLine("Attaquez votre adversaire qui a "+health+" de vie, en indiquant le nombre de dégats ");
                 DoDamage();
                 if(health <= 0)
                     break;
@@ -33,7 +34,7 @@ namespace Exercice_3_Program
                 
                // Random r = new Random();
                 int randomGod = new Random().Next(1,100);
-                if(randomGod > 70)
+                if(randomGod > 50)
                     isInvincible = true;
                 else
                     isInvincible = false;

@@ -19,28 +19,43 @@ namespace Exercice_6_Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Saisi une année stp, je vais te dire des choses dessus");
-            string strYear = Console.ReadLine();
-            int intYear;
-            if(int.TryParse(strYear,out intYear))
+            while(true)
             {
-                if(intYear % 4 == 0 && intYear % 100 != 0 && intYear % 400 == 0 ) // est divisible par 4 
-                {
-                    Console.WriteLine( strYear+" est bissextile");
-                }
-                else
-                {
-                    Console.WriteLine( strYear+" n’est pas bissextile");
-                }
-               // if(intYear % 100 == 0) // est divisible par 100 
-                //if(intYear % 400 == 0) // est divisible par 400 
+                     Console.WriteLine("Saisi une année stp, je vais te dire des choses dessus, tape Quit pour quitter le programme");
+                     string strYear = Console.ReadLine();
+                     if(strYear == "Quit")
+                        break;
+
+                     int intYear;
+                     if(int.TryParse(strYear,out intYear))
+                     {
+                         if(intYear % 4 == 0 && intYear % 100 != 0 && intYear % 400 == 0 ) // est divisible par 4 
+                         {
+                             Console.WriteLine( strYear+" est bissextile");
+                         }
+                         else if(intYear % 4 == 0 && intYear % 100 != 0)
+                         {
+                             Console.WriteLine( strYear+" est bissextile");
+                         }
+                         else if(intYear % 4 == 0 && intYear % 100 == 0  && intYear % 400 != 0  )
+                         {
+                             Console.WriteLine( strYear+" n’est pas bissextile");
+                         }
+                         else if(intYear % 4 == 0 && intYear % 100 == 0  && intYear % 400 == 0  )
+                         {
+                             Console.WriteLine( strYear+" bissextile");
+                         }
+                         else
+                         {
+                             Console.WriteLine( strYear+" n’est pas bissextile");
+                         }
+                     }
+                     else
+                     {
+                         Console.WriteLine("Error");
+
+                     }
             }
-            else
-            {
-                Console.WriteLine("Error");
-                
-            }
-            
         }
     }
 }
