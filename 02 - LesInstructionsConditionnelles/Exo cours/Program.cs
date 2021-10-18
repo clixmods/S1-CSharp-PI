@@ -31,10 +31,12 @@ namespace Exo_cours
             {
                 Console.WriteLine("Tapez une valeur ");
                 string userProposition = Console.ReadLine();
-                if(int.TryParse(userProposition,out int cool))
+                int cool;
+                if(int.TryParse(userProposition,out cool))
                 {
                     result = int.Parse(userProposition);
-                    break;
+                    return cool;
+                    //break;
                 }
                 else
                 {
@@ -42,7 +44,7 @@ namespace Exo_cours
                     continue;
                 }
             } 
-            return result;
+            //return result;
         }
     }
 }

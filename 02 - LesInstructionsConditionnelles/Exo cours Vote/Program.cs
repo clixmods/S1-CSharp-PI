@@ -12,14 +12,19 @@ namespace Exo_cours_Vote
     {
         static void Main(string[] args)
         {   
+            
+
+
+
             while(true)
             {
                 Console.WriteLine("Entrez un age quelconque svp, EN INT MERCI");
                 string age = Console.ReadLine();
-                if(int.TryParse(age, out int cool))
+                int result;
+                if(int.TryParse(age, out result))
                 {
-                    CheckAgePourVoter(int.Parse(age));
-                    CheckAgePourVoterNegativement(int.Parse(age));
+                    CheckAgePourVoter(result);
+                    CheckAgePourVoterNegativement(result);
                     break;
                 }
                 else
@@ -47,11 +52,11 @@ namespace Exo_cours_Vote
         {
             if(age < 18)
             {
-                Console.WriteLine("ne peut pas voter (function negative)");
+                Console.WriteLine("ne peut pas voter (de maniere negative)");
             }
             else
             {
-                Console.WriteLine("peut voter (function negative)");
+                Console.WriteLine("peut voter (de maniere negative)");
             }
             
         }
