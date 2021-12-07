@@ -37,8 +37,13 @@ namespace DM4_LesTableaux
                         Console.WriteLine(Exo2.SortAlphabetTable(pogTable));
                     break;
                     case ConsoleKey.E :
-                        string[] fdp =  {"aaaaaaaaaaaaaaa","AR", "abc", "abcd", "abdce", "abcdef"};
-                        Exo3.TriAlphabetiqueString(fdp);
+                        string[] strTableA =  {"bonjour","comment", "train", "avion", "ours", "frites"};
+                        string[] strTableB =  {"oignons","bus", "zebre", "pet", "moto", "course"};
+                        string[] strTableC =  {"bonjour","zebre", "shampoing", "diamant", "coca", "fromage"};
+
+                        Exo3.TriAlphabetiqueString(strTableA);
+                        Exo3.TriAlphabetiqueString(strTableB);
+                        Exo3.TriAlphabetiqueString(strTableC);
                     break;
                     case ConsoleKey.R :
                        Exo4.Init();
