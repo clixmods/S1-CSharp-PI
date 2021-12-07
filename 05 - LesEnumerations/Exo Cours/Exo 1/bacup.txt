@@ -1,0 +1,81 @@
+using System;
+
+namespace Exo_1
+{
+    /*
+        Exo 1
+
+        Creer une enumeration 'Operation' qui definie les 5 operations numeriques :
+        +, -, *, /, %
+        Creer une fonction 'Calculate' qui prend en entrée un paramètre typé par 
+        l'enumeration Operation et deux paramètrs de type numérique.
+
+        Implementer le comportement de la fonction : 
+        La fonction doit retourner le resultat de l'operation entre les 
+        deux variables numeriques.
+        L'operation est choisie en fonction du paramètre de 
+        type enum 'Operation' (Conseil Utiliser un switch)
+
+    */
+    public class oha
+        {
+           public static int ficj = 5;
+        }
+    class Program
+    {
+        
+
+        public enum Operation : int
+        {
+            Addition = 1,
+            Soustraction = 9+5,
+            Multiplication = 5+5,
+            Division = 9,
+            Modulo = 15
+        }
+        static void Main(string[] args)
+        {
+            int Oh = (int)Operation.Multiplication;
+            int k = oha.ficj;
+            int OHHH = 10 - Oh;
+            //Console.WriteLine(Operation.Multiplication);
+            //ConsoleKeyInfo readKey = Console.ReadKey();
+           
+            Operation test = (Operation)(9+1);  
+
+            string BITCH = "Division";
+            test = (Operation)Enum.Parse(typeof(Operation) ,BITCH);    
+            string bitahc = Enum.GetName(typeof(Operation), 9);
+
+            Operation[] OHALL = (Operation[])Enum.GetNames(typeof(Operation));     
+            for(int i = 0 ; i < OHALL.Length; i++)
+            {
+                Console.WriteLine(OHALL[i]);
+            }
+
+            // Console.WriteLine(bitahc);
+            // Console.WriteLine(((int)test));
+            //  Console.WriteLine(Operation.Modulo);
+
+            // switch(readKey.Key)
+            // {
+            //     case ConsoleKey.B:
+            //     case ConsoleKey.Backspace:
+            //         FunctionMove(readKey.KeyChar);
+            //         Console.WriteLine("HIJO DE PUTA");
+            //     break;
+            //     default :
+            //         Console.WriteLine("h "); 
+            //     break;
+            // }
+        }
+        static private void FunctionMove(char Key)
+        {
+            Console.WriteLine("Vakue : " + Key );
+        }
+        private void DefaultFunction()
+        {
+            Console.WriteLine("Vakue : " +"5" );
+        }
+    }
+}

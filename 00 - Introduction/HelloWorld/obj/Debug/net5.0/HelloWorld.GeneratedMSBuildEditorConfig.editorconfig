@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = HelloWorld
-build_property.ProjectDir = C:\Users\clixd\Documents\Student_S1-C-PI-2021\00 - Introduction\HelloWorld\
+build_property.ProjectDir = c:\Users\clixd\Documents\GitHub\S1-CSharp-PI\00 - Introduction\HelloWorld\
