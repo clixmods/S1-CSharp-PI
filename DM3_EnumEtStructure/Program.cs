@@ -25,25 +25,32 @@ namespace DM3_EnumEtStructure
             Console.WriteLine("Bravo vous savez appuyer sur les touches autorisées :)!");
 
 
-            // Vector3 Hi = new Vector3(4,5,6);
-            // Vector3 HiYO = new Vector3(2,5,6);
-            // Console.WriteLine(Hi);
-            // Console.WriteLine(HiYO);
+             Vector3 Hi = new Vector3(4,5,6);
+             Vector3 HiYO = new Vector3(2,5,6);
+             Console.WriteLine(Hi);
+             Console.WriteLine(HiYO);
 
-            // Hi.Translate(3,1,1);
-            // HiYO.Translate(new Vector3(10,10,10));
+             Hi.Translate(3,1,1);
+             HiYO.Translate(new Vector3(10,10,10));
           
-            // Console.WriteLine(Hi);
-            // Console.WriteLine(HiYO);
+             Console.WriteLine(Hi);
+             Console.WriteLine(HiYO);
 
-            // Console.WriteLine(Hi.Longueur());
-            // Console.WriteLine(HiYO.Longueur());
+             Console.WriteLine(Hi.Longueur());
+             Console.WriteLine(HiYO.Longueur());
 
-            // Console.WriteLine(Vector3.Distance(Hi,HiYO));
-            // Console.WriteLine(Vector3.Distance(HiYO,Hi));
+             Console.WriteLine(Vector3.Distance(Hi,HiYO));
+             Console.WriteLine(Vector3.Distance(HiYO,Hi));
             
-            Forme myForm = new Forme(TypeForme.DiamondSquare, 7);
-            Console.WriteLine(myForm);
+        
+
+            Console.WriteLine(new Forme(TypeForme.Diamant, 7));
+            Console.WriteLine(new Forme(TypeForme.DiamondSquare, 7));
+            Console.WriteLine(new Forme(TypeForme.FauxCarre, 7));
+            Console.WriteLine(new Forme(TypeForme.TriangleIsocele, 7));
+            Console.WriteLine(new Forme(TypeForme.TriangleRectangle, 7));
+            Console.WriteLine(new Forme(TypeForme.VraiCarre, 7));
+
 
         }
     }
