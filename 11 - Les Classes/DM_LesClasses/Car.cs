@@ -8,11 +8,20 @@ namespace DM_LesClasses
 
         public Car(string ownerName)
         {
-            _ownerName = ownerName;
+            Owner = ownerName;
         }
         public string Owner
         {
             get{return _ownerName;}
+            set{    if( !string.IsNullOrEmpty(value) )
+                    {
+                        _ownerName = value;
+                    }
+                    else
+                    {
+                        _ownerName = "anonyme";
+                    }
+            }
         }
     }
 }
