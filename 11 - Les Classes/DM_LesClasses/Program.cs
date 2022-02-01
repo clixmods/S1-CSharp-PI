@@ -20,6 +20,7 @@ namespace DM_LesClasses
 
             while(run)
             {
+                idActionFromUser = 0;
                 Console.WriteLine(message);
                 if(int.TryParse(Console.ReadLine(), out int result))
                 {
