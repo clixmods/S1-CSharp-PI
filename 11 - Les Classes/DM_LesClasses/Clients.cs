@@ -10,7 +10,7 @@ namespace DM_LesClasses
         */
         public Ticket GetRandomTicket()
         {
-            if(tickets.Length == 0) // on return null
+            if(tickets.Length == 0) // on return null car il a pas de ticket
             {
                 return null;
             }
@@ -24,7 +24,7 @@ namespace DM_LesClasses
         public void AddTicket(Car newCar)
         {
             Ticket[] temp = new Ticket[tickets.Length+1]; // Tableau temporaire qu'on assignera à la fin à l'original avec une taille +1 car on va ajouter 
-            if(tickets.Length == 0) // Taille du tableau original à zero du coup pas besoin de copié 
+            if(tickets.Length == 0) // Taille du tableau original à zero du coup pas besoin de copié les élements
             {
                 temp[0] = new Ticket(newCar);
                 tickets = temp;
@@ -40,18 +40,17 @@ namespace DM_LesClasses
             tickets = temp; // on assigne temp au tableau original
         }
         /*
-        d) Ajouter une fonction qui prend en entrée un Ticket, 
-        et qui le supprime de la collection.
+        d) Cette fonction prend en entrée un Ticket,et le supprime de la collection.
         */
         public void DeleteTicket(Ticket ticketToDelete)
         {
-            Ticket[] temp = new Ticket[tickets.Length-1];
+            Ticket[] temp = new Ticket[tickets.Length-1]; // on crée un tableau temp de -1 en taille
             bool isDeleted = false;
             for(int i = 0 ; i < tickets.Length; i++)
             {
                 if(tickets[i] == ticketToDelete)
                 {
-                    isDeleted = true;
+                    isDeleted = true; // on l'a delete, du coup, on pourra réassigner correctement le tableau temp à l'original
                     tickets[i] = null;
                     continue;
                 }

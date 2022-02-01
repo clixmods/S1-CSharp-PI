@@ -58,7 +58,7 @@ namespace DM_LesClasses
         */
         public int NumberAvailablePlace()
         {
-            int availablePlace = 0;
+            int availablePlace = 0; // Compteur que j'incrementerai si une place contient null vehicule
             for(int i = 0 ; i < vehicles.Length; i++)
             {
                 if(vehicles[i] == null)
@@ -75,9 +75,9 @@ namespace DM_LesClasses
         */
         public float AddMoney(DateTime date)
         {
-            int hoursPassed = (int)DateTime.Now.Subtract(date).TotalHours;
-             Gain += _pricePerHour * hoursPassed;
-            return _pricePerHour * hoursPassed;;
+            int hoursPassed = (int)DateTime.Now.Subtract(date).TotalHours; // Calcule le temps passé, il doit surement exister une meilleur méthode, mais bon
+            Gain += _pricePerHour * hoursPassed;
+            return _pricePerHour * hoursPassed; // Je retourne les gains au cas ou j'en ai besoin
         }
         /*
         Cette fonction permet d'afficher l'état du parking.
@@ -89,7 +89,7 @@ namespace DM_LesClasses
             string message = "";
             for(int i = 0; i < vehicles.Length;i++)
             {
-                if(vehicles[i] == null)
+                if(vehicles[i] == null) // si null, ca veut qu'aucun véhicule n'est enregistré
                 {
                     message += $"La place de parking numéro {i} est libre \n";
                 }
