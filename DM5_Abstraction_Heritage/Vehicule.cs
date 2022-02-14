@@ -2,12 +2,12 @@ public abstract class Vehicule
 {
     //Classe de base. Trois attributs, le numéro d'immatriculation du véhicule, la vitesse maximale et le poids à vide.
     string _immatriculation; // Plaque d'immatriculation
-    protected float _maxSpeed; // Vitesse maximale
-    protected float _weight; // Poids à vide du vehicule ( 1 par tonne)
+    float _maxSpeed; // Vitesse maximale
+    float _weight; // Poids à vide du vehicule ( 1 par tonne)
     
     
-    protected float _currentCharge = 0; // Charge actuelle du vehicule
-    protected float _maxCharge; // Max charge supporter par le vehicule
+    float _currentCharge = 0; // Charge actuelle du vehicule
+    float _maxCharge; // Max charge supporter par le vehicule
     bool _hasHuileEngine; // bool pour indiquer si le vehicule est équipé du moteur
 
 
@@ -18,9 +18,42 @@ public abstract class Vehicule
     }
     public float Speed
     {
+        protected set{ if(value > 0)
+                            _maxSpeed = value;
+                        else
+                            _maxSpeed = 1;
+                         }
         get{ return _maxSpeed;}
     }
+    public float CurrentCharge
+    {
+        protected set{ if(value > 0 && value <= _maxCharge)
+                            _currentCharge = value;
+                        else
+                            _currentCharge = 1;
+                         }
+        get{ return _currentCharge;}
+    }
 
+    public float MaxCharge
+    {
+        protected set{ if(value > 0 )
+                            _maxCharge = value;
+                        else
+                            _maxCharge = 1;
+                         }
+        get{ return _maxCharge;}
+    }
+
+    public float Weight 
+    {
+        protected set{  if(value > 0)
+                            _weight = value;
+                        else
+                            _weight = 1;
+                        }
+        get{ return _weight;}
+    }
     // Fonction PoidsTotal qui return le poids totale d'un vehicule, suivant les 
     // caractéristiques des enfants, la fonction peut être différente à chacun d'eux
     public abstract float PoidsTotal();
@@ -32,7 +65,8 @@ public abstract class Vehicule
     {
         string display = "";
         display += "Immatriculation : "+_immatriculation+"\n";
-        display += "Poids à vide : "+_weight+"\n";
+        display += "Poids à vide (sans charges etc) : "+_weight+"\n";
+        display += "Poids Total : "+PoidsTotal()+" \n";
         display += "Vitesse maximal : "+_maxSpeed+"\n";
         // Si il y a possibilité d'avoir une charge, on check sur le max est au dessus de 0;
         if(_maxCharge > 0)

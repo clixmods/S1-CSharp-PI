@@ -7,23 +7,19 @@ public abstract class Camion : Vehicule
     
     public Camion(string immatriculation) : base(immatriculation)
     {
-        _maxSpeed = CalculeVitesseMax();
+        Speed = CalculeVitesseMax();
     }
 
  
     public abstract float CalculeVitesseMax();
 
-    public float MaxCharge
-    {
-        get{ return _maxCharge;}
-    }
     // une méthode SetCharge(int charge) pour les camions permettant de modifier le  poids du chargement.
     public bool SetCharge(float charge)
     {
-        if(charge <= _maxCharge && charge >= 0)
+        if(charge <= MaxCharge && charge >= 0)
         {
-            _currentCharge = charge;
-            _maxSpeed = CalculeVitesseMax();
+            CurrentCharge = charge;
+            Speed = CalculeVitesseMax();
             return true;
         }    
         else
@@ -37,7 +33,7 @@ public abstract class Camion : Vehicule
 
     public override float PoidsTotal()
     {
-        return _currentCharge + _weight;
+        return CurrentCharge + Weight;
 
         throw new System.NotImplementedException();
     }

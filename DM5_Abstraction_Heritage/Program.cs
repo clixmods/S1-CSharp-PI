@@ -45,7 +45,6 @@ namespace DM5_Abstraction_Heritage
                     break;
                     case 2: // Afficher tous les vehicules du convoi
                         Console.WriteLine(convoiUser);
-                        
                     break;
                     case 3: // Afficher la vitesse max du convoi
                         Console.WriteLine("La vitesse max : "+convoiUser.MaximalSpeed());
@@ -62,9 +61,10 @@ namespace DM5_Abstraction_Heritage
             void AskToCreateVehicule()
             { 
                     /*
-                    Choisir entre les 3 types Vehicules Petit Bus, Camion Citerne, Camion Baché.
+                    Demande un choix entre les 3 types de Vehicules Petit Bus, Camion Citerne, Camion Baché.
                     Ensuite le programme demande d'entrer l'immatriculation du vehicule.
-                    Si l'utilisateur a choisi un camion, le programme demande la charge du camion et verifie si la proposition ne dépasse pas la charge max.
+                    Si l'utilisateur a choisi un camion, le programme demandera la charge du camion 
+                    et verifie si la proposition ne dépasse pas la charge max.
                     Ensuite le programme ajoute le vehicule au convoi.
                     */
                     string message = "\nTaper le chiffre correspondant à chaque vehicule pour les crées:\n";
@@ -95,9 +95,8 @@ namespace DM5_Abstraction_Heritage
                             result = -1;
                             continue;
                         }
+                        // On déclare le vehicule, il sera ensuite attribué suivant le choix de l'utilisateur
                         Vehicule askedVeh;
-
-
                         Console.Clear(); // je clear pour qu'on puisse se focus correctement sur l'action donnée
                         switch(idActionFromUser)
                         {
@@ -117,9 +116,11 @@ namespace DM5_Abstraction_Heritage
                             continue;
                             
                         }
+                        // On demande la charge du camion si le Vehicule est de la class Camion
                         if(askedVeh is Camion vehCamion)
                             AskChargeCamion(vehCamion);
 
+                        // Ajoute le vehicule au convoi.
                         convoiUser.AjouterVehicule(askedVeh);
                         run = false;
                         

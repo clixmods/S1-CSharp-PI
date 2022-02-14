@@ -3,8 +3,8 @@ public class CamionCiterne : Camion
     
     public CamionCiterne(string immatriculation) : base(immatriculation)
     {
-        _weight = 3;
-        _maxCharge = 10;
+        Weight = 3;
+        MaxCharge = 10;
     }
 
     /*

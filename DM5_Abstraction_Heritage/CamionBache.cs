@@ -3,8 +3,8 @@ public class CamionBache : Camion
     
     public CamionBache(string immatriculation) : base(immatriculation)
     {
-        _weight = 4;
-        _maxCharge = 20;
+        Weight = 4;
+        MaxCharge = 20;
         
     }
 

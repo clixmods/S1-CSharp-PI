@@ -4,13 +4,13 @@ public class PetitBus : Vehicule
 
     public PetitBus(string immatriculation ) : base(immatriculation)
     {
-        _weight = 4;
-        _maxSpeed = 150;
+        Weight = 4;
+        Speed = 150;
     }
 
     public override float PoidsTotal()
     {
-        return _currentCharge + _weight;
+        return CurrentCharge + Weight;
         
         throw new System.NotImplementedException();
     }
